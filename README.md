@@ -1,9 +1,12 @@
 # Snake-Patrol
 Scan for python installations on macOS, and run CVE-2015-20107.py script to report if patching is needed
 
+These scripts need Full Disk Access permissions and must be run as root so it can scan the entire macOS filesystem (except the areas restricted by macOS)
+
 Make sure to run this from an app with Full Disk Access permission - i.e. ensure iTerm.app has
 Full Disk Access enabled in Apple System Settings, Security & Privacy Privacy & Security.
-
+---
+## How to use
 Clone this repo
 
 cd into the cloned repo directory
@@ -13,8 +16,9 @@ run
 ./Snake-Patrol.zsh
 ```
 
+---
 
-Example output:
+## Example output:
 ```
 lrwxr-xr-x  1 root  wheel  10 Apr 11 14:08 /usr/local/munki/Python.framework/Versions/3.10/bin/python3 -> python3.10
 =====CVE-2015-20107.py START=====
