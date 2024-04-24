@@ -5,7 +5,9 @@ These scripts need Full Disk Access permissions and must be run as root so it ca
 
 Make sure to run this from an app with Full Disk Access permission - i.e. ensure iTerm.app has
 Full Disk Access enabled in Apple System Settings, Security & Privacy Privacy & Security.
+
 ---
+
 ## How to use
 Clone this repo
 
