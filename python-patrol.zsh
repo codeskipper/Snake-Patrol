@@ -8,7 +8,7 @@
 # Make sure to run this from an app with Full Disk Access permission - i.e. ensure iTerm.app has
 # Full Disk Access enabled in Apple System Settings, Security & Privacy Privacy & Security.
 
-# WIP: detect if script has full disk access permission and bail out if not
+# detect if script has full disk access permission and bail out if not
 # thanks to Chris Dzombak for https://www.dzombak.com/blog/2021/11/macOS-Scripting-How-to-tell-if-the-Terminal-app-has-Full-Disk-Access.html
 if ! plutil -lint /Library/Preferences/com.apple.TimeMachine.plist >/dev/null ; then
   echo "This script requires your terminal app to have Full Disk Access."
