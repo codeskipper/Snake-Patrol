@@ -11,9 +11,11 @@ if [ "$( id -u )" -ne 0 ]; then
   exit 1
 fi
 
+
+
 # Script needs the version of Python that you want to delete as argument 1, MUST format as x.yy e.g. '3.10'
 python_version_number="$1"
-if [[ ! "$python_version_number" =~ [23].[\d]{1,2} ]]; then
+if [[ ! "$python_version_number" =~ [23].[0123456789]{1,2} ]]; then
   echo "Please format the Python version number to be uninstalled as x.yy"
   exit 1
 fi
