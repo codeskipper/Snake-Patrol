@@ -1,4 +1,4 @@
-# Snake-Patrol
+# Python Patrol
 Scan for python installations on macOS, and run CVE-2015-20107.py script to report if patching is needed
 
 These scripts need Full Disk Access permissions and must be run as root so it can scan the entire macOS filesystem (except the areas restricted by macOS)
@@ -15,7 +15,7 @@ cd into the cloned repo directory
 
 run
 ```
-./Snake-Patrol.zsh
+./python-patrol.zsh
 ```
 
 ---
