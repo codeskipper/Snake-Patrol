@@ -1,6 +1,7 @@
-## Snake_Patrol.zsh
+#!/usr/bin/env zsh
+## python-patrol.zsh
 
-# Scans for python installations on macOS, and run CVE-2015-20107.py script from working directory to report whether
+# Scans for Python installations on macOS, and run CVE-2015-20107.py script from working directory to report whether
 # patching is needed.
 # Use sudo to search the entire macOS root filesystem as root user.
 
