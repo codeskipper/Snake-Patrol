@@ -15,7 +15,7 @@ cd into the cloned repo directory
 
 run
 ```
-./python-patrol.zsh
+sudo ./python-patrol.zsh
 ```
 
 ---

@@ -8,6 +8,15 @@
 # Make sure to run this from an app with Full Disk Access permission - i.e. ensure iTerm.app has
 # Full Disk Access enabled in Apple System Settings, Security & Privacy Privacy & Security.
 
+# ToDo: detect if script has full disk access prmission and bail out if not
+
+# script must run as root
+if [ "$( id -u )" -ne 0 ]; then
+  echo "Please run this script as root or using sudo!"
+  exit 1
+fi
+
+
 # BSD find invocation:
 # Use -prune to avoid traversing and omit duplicate read-only mounted data volume + system volumes.
 # filter to find files that match all of these criteria

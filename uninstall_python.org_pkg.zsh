@@ -5,12 +5,11 @@
 # Thanks to h2ppy for https://stackoverflow.com/a/73687306/4326287
 # formatted as script with version number as argument, and expanded remove pkg receipts as well
 
-# script must run as root, call it using sudo
+# script must run as root
 if [ "$( id -u )" -ne 0 ]; then
   echo "Please run this script as root or using sudo!"
   exit 1
 fi
-
 
 
 # Script needs the version of Python that you want to delete as argument 1, MUST format as x.yy e.g. '3.10'
